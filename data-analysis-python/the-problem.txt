@@ -1,0 +1,13 @@
+Importing Datasets 1 - The Problem
+
+Why data analysis?
+  - Data is everywhere
+  - Manually or digitally i.e. via clickstream
+  - Data is not information, however.
+  - Data analysis and science allows us to unlock the information we need from the data, and allows us to predict the unknown or the future.
+
+Lets say Tom wants to sell a car, but he doesn't know which price he should put, he wants to sell his car for the most money he can, but also wants to set a reasonable price so that others will buy. He wants to know:
+  - What data is there on other cars and their characteristics?
+  - What features of cars affect their price?
+    - Colour? Brand? Age?
+  - We need to ask the right questions in terms of data.

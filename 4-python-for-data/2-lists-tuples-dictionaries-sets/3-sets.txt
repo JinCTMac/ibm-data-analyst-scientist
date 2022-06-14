@@ -7,3 +7,14 @@ We can convert a list into a set using the set() function, where the only parame
 Set operations:
   set.add() - adds an item to a set
   set.remove() - removes an item from a set, where the parameter is the item you want to remove
+  item in set - checks if an item is in the set, returning either True or False
+
+If we combine two sets, we can imagine it like a venn diagram with two circles. The combination of the sets results in values that are present in both sets, which we can use the AND function, or & to represent (that or &&). You can also use the .intersection() method.
+  album_3 = album_1 & album_2 => a new set that contains elements that are present in both set 1 and set 2
+
+  album_set1.intersection(album_set2)
+
+We can also combine both sets and keep the items in both sets that are not present in both using the .union() method, where the parameter is the second set you are unioning with the first. The result is a new set that has all the unique elements from both sets.
+
+We can see which differences there are between sets using .difference().
+  album_set1.difference(album_set2)

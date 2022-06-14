@@ -1,1 +1,9 @@
 Python Sets
+
+Sets are also a type of collection. Unlike lists and tuples however, sets are unordered. They only have unique elements, so only one of each element is in a set. We use {} for sets.
+
+We can convert a list into a set using the set() function, where the only parameter is the list.
+
+Set operations:
+  set.add() - adds an item to a set
+  set.remove() - removes an item from a set, where the parameter is the item you want to remove

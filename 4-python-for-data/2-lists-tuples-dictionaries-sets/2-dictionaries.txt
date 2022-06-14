@@ -10,3 +10,10 @@ We can add new values to the dictionary using [] notation again, but assigning a
 
 To delete a key-value pair from a dictionary, we can use the del method with the dict and key name.
   del(dict["colour"])
+
+We can verify the existence of an item in the dictionary using the in function.
+  "Thriller" in Dict => returns either True or False
+
+We can look at the keys or values in a dictionary using .keys() and .values().
+  dict.keys()
+  dict.values()

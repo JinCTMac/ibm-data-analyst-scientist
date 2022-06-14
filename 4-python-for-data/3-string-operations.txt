@@ -1,0 +1,38 @@
+String operations
+
+A string is a sequence of characters, contained within " or '. A string can be assigned to a variable, and can be thought of as an array of characters which can be accessed by index number.
+
+string1 = "jesus"
+string1[0] => will return "j"
+
+We can also use negative indexing with strings.
+
+We can slice a string using the variable the string is assigned to, and accessing a starting and ending index. The ending index will be 1 below the value you input.
+
+name[0:4]
+name => will return "jesu"
+
+We can use the len() method to obtain the length of the string.
+
+We can concatenate strings using +. This returns a new string that is the combination of both strings.
+  name = "Jesus"
+  lastname = "Christ"
+  fullname = name + " " + lastname
+
+We can multiply strings using a number and * along with the string.
+  name = "Jesus"
+  3*name = "JesusJesusJesus"
+
+Strings are immutable in Python. This means we can't reassign the string, but can create a new string in a new variable.
+
+We can use escape sequences using \ for characters difficult to input, such as a new line \n and a \t for a tab between characters. We can use this for characters like ' or " which would otherwise be difficult to put in the middle of a string, using \" and \'.
+
+String methods include .upper(), which uppercases a whole string, and .replace(), which replaces a substring with another substring. The .find() method takes a parameter which is a substring in the string, and finds the first index where that substring occurs.
+
+  name = "Jesus"
+  name.upper() => will return "JESUS"
+
+  name.replace("Je", "He")
+  name => will return "Hesus"
+
+  name.find("es") => will return 1

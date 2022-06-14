@@ -18,3 +18,35 @@ Objects and types:
   Python is an object oriented language, hence all types you work with in Python are objects of that type class. We can check the type of any variable or raw value using the type() method, which simply returns the type of that variable or value.
 
   type(12.0) => will return float
+
+  Types include:
+    Int - represents a whole number, can be positive or negative
+    Float - represents a real number, any whole number can be made a float by adding .0 to the end i.e. 12.0
+    String - letters and words
+    Boolean - true or false
+
+Typecasting:
+  We can change the type of an object in Python using typecasting, which is as simple as calling the type name you want to change to and the value which you want to change the type of. Note this doesn't work well with certain types, such as turning a float into an int.
+
+  float(2) => will return 2.0
+
+  We can also turn a string into an integer, if the string matches an integer value.
+
+  int("1") => will return 1
+
+Expressions:
+  Instructions that contain variables and operators.
+
+  Operators include:
+  +
+  -
+  /
+  // (floor/integer division, different from division above in that it always returns an integer)
+
+Variables:
+  We assign variables simply in Python just using var_name = var_value, with no need for semicolons or defining variable type beforehand unlike in C++/Java/JS.
+
+  To show the value of a variable, just type that variable name and execute.
+
+  x = 43 + 60
+  x => will return 103

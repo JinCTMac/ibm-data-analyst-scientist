@@ -1,0 +1,9 @@
+Importing Datasets 2 - Understanding the Data
+
+We have a dataset on cars in CSV format, where each line represent a row in the dataset.
+
+We have a few different attributes, such as:
+  - Symboling - an insurance prediction to tell us how risky a car is, from -3 (safe) to +3 (risky)
+  - Normalised losses - the average loss per car per year
+
+We have a target value, or label, which is price. We want to predict the price, and to do so we have several predictors which are the other attributes in the dataset, which are independent variables. They are likely to have a degree of collinearity because of how they represent something related to a car.

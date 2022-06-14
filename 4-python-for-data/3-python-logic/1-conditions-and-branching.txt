@@ -1,1 +1,26 @@
 Conditions and Branching
+
+We can use logical operators to compare two values and return a boolean telling us if the value is true or false.
+
+Logical operators include:
+  <
+  >
+  == (equality comparison)
+  != (not)
+  && (and)
+  || (or)
+
+We can compare ints, floats, and strings as well.
+
+Conditional statements - if statements:
+  if age > 18:
+    print("you can go")
+  print("you can't go")
+
+Conditional statements - else statements:
+  if age > 18:
+    print("you can go")
+  elif age < 18 && age > 16:
+    print("you're close")
+  else:
+    print("you can't go")

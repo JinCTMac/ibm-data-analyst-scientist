@@ -8,3 +8,5 @@ We can assign expressions to a variable, and the variable will represent the res
 
 x = 12/4
 x = 3
+
+We can execute Python code either in a notebook like Jupyter, or in VScode using the code runner package. Or we can run in a command shell for Python in the command line like with iPython. Anaconda is an open-source distribution that includes multiple packages for working with Python and building a virtual environment, including a GUI to launch applications instead of using the command line. (https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))

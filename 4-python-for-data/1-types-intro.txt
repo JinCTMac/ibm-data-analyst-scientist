@@ -1,0 +1,15 @@
+Intro to Types
+
+You can have different data types in Python, from integers to floats, strings, arrays, etc.
+
+To find the data type in Python, we can use the type method.
+
+type(11) = int
+type(12.34) = float
+
+We can change the type of a variable in Python using type casting, such as changing an int to a float. This typically only is from int to float and not the other way around, since we would lose the decimal values otherwise.
+
+float(2) = 2 (aka 2.0)
+str(1) = "1"
+
+For more info on types: https://www.w3schools.com/python/python_datatypes.asp

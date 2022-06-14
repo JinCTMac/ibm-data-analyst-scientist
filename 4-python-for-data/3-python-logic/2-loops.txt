@@ -13,6 +13,21 @@ For loops:
     print(i)
   => will return 0, 1, 2
 
+  # For loop example
+  dates = [1982,1980,1973]
+  N = len(dates)
+
+  for i in range(N):
+      print(dates[i])
+
+  # Example of for loop
+  for i in range(0, 8):
+      print(i)
+
+  In Python, we can also access list elements directly to loop over.
+  for year in dates:
+    print(year)
+
 Enumerate:
   We can use the enumerate function to loop through a list or other enumerable object and also display other values i.e. their index.
 
@@ -26,3 +41,14 @@ While loops:
   while squares[i] == "orange":
     print(squares[i])
     i += 1
+
+  # Write your code below and press Shift+Enter to execute
+
+  PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
+
+  i = 0
+  while i < len(PlayListRatings):
+      print(PlayListRatings[i])
+      if PlayListRatings[i] < 6:
+          break
+      i += 1

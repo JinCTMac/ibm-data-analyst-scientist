@@ -1,0 +1,29 @@
+Lists and Tuples
+
+Tuples:
+  Are an ordered sequence of elements contained inside of (), where each element can be accessed via an index. However, the elements inside of a tuple cannot be changed, as tuples are immutable. We can concatenate and slice tuples.
+
+  tup1 = (1, 2, 3)
+  tup2 = (4, 5, 6)
+  tup1 + tup2 => (1, 2, 3, 4, 5, 6)
+
+  tup1 = (1,2,3,4,5,6)
+  tup1[0:4] => will return 1,2,3,4
+
+  We can nest tuples within other tuples.
+
+  tup1 = (1, 2, (3, 4), 5, 6)
+
+Lists:
+  An ordered sequence of elements contained inside of [], where each element can be accessed via an index. Elements within a list/array can be changed as arrays/lists are mutable. Common methods include:
+
+  list.pop() - remove last element from array, or a specified element with an index
+  list.reverse() - reverse the array
+  list.sort() - sort the array from smallest to largest
+  list.append() - add element to end of list
+  list.insert() - add element at specified index Python_distribution
+  list.extend() - add a list to another list
+
+  See list of array methods here (https://www.w3schools.com/python/python_ref_list.asp)
+
+  We can make a string into a list using the .split() method, which either splits via spaces or any delimiter you want in the parameters.

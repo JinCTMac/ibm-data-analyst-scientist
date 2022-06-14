@@ -1,0 +1,28 @@
+Importing and exporting data using Python and Pandas
+
+Once we have our data in Python, we can do our analysis. We want to load our data into notebooks, and we need to consider two factors:
+  - The data format, such as CSV, JSON, etc
+  - The filepath, which tells us if the data is on the internet, or local
+
+In Pandas, it is easy to import data via the pd.read_csv() method. We just need to:
+
+1) Import Pandas
+2) Set the filepath as a variable
+3) Set the results of pd.read_csv() into another variable, usually df for dataframes
+
+import pandas as pd
+url = "filepath_here"
+df = pd.read_csv(url)
+
+However, pd.read_csv() assumes the data has headers, but our dataset here doesn't, so we just need to add an additional parameter to say that our data has no headers:
+
+df = pd.read_csv(url, header = None)
+
+We can use df to print out the whole dataframe, but this is usually not needed most of the time. So, we can use df.head(n) or df.tail(n), where n represents the number of rows we want to show.
+
+It's difficult to understand the data without column names. Most files will have them, but we can manually assign them by creating an array of header names, and then assigning df.columns = headers to replace the default headers if there are none.
+
+headers = [...list of header names...]
+df.columns = headers
+
+To save the data to a new CSV, we can use the method df.to_csv(file_path).

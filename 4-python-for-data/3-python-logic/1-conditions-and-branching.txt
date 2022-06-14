@@ -1,4 +1,5 @@
 Conditions and Branching
+(https://www.w3schools.com/python/python_conditions.asp)
 
 We can use logical operators to compare two values and return a boolean telling us if the value is true or false.
 
@@ -15,12 +16,35 @@ We can compare ints, floats, and strings as well.
 Conditional statements - if statements:
   if age > 18:
     print("you can go")
-  print("you can't go")
 
-Conditional statements - else statements:
+Conditional statements - else statements and elif statements:
   if age > 18:
     print("you can go")
-  elif age < 18 && age > 16:
+  elif age < 18 &&/and age > 16:
     print("you're close")
   else:
     print("you can't go")
+
+Summary of conditional statements:
+
+# If statement example
+
+age = 19
+# age = 18
+
+#expression that can be true or false
+if age > 18:
+
+    #within an indent, we have the expression that is run if the condition is true
+    print("you can enter" )
+
+# elif, or else if, represents another condition that has its code executed when the conditions above are not met, those conditions can be other elif statements or the main if statement
+elif age == 18:
+  print("you must go here")
+
+# else is run when neither the main if statement nor the remaining elif statements are evaluated to true
+else:
+  print("you can't enter)
+
+#The statements after the if statement will run regardless if the condition is true or false
+print("move on")

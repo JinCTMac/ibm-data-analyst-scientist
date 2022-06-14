@@ -1,1 +1,19 @@
 Python packages for data science
+
+Python libraries are a collection of functions and methods that let you write actions without writing much code. There are three broad groups:
+
+1) Scientific computing libraries
+  - Pandas, which allows us to create and analyse data structure and tools, including in dataframes
+    - Offers data structure and tools for effective data manipulation and analysis. It provides fast access to structured data. The primary instrument of Pandas is a two-dimensional table consisting of columns and rows labels which are called a DataFrame. It is designed to provide an  easy indexing function.
+  - Numpy, which provides mathematical functions and tools for advanced modelling and array manipulation
+  - SciPy, which is similar to Numpy but offers more tools for integration and calculus
+
+2) Visualisation libraries
+  - Allows us to create graphs, charts and maps to show analysis results in a meaningful format
+  - Matplotlib - used for making graphs and plots
+  - Seaborn - allows generation of timeseries, heatmaps and confusion matrices
+
+3) Algorithmic libraries
+  - Includes libraries for machine learning and other modelling
+  - Scikit - used for basic machine learning, linear regression and classification algorithms
+  - Statsmodels - allows for statistical testing, building statistical models, and data exploration

@@ -20,7 +20,7 @@ Lists:
   list.pop() - remove last element from array, or a specified element with an index
   list.reverse() - reverse the array
   list.sort() - sort the array from smallest to largest
-  list.append() - add element to end of list
+  list.append() - add one element to end of list (so if you specify another list, it will just add that list to the existing list as a single element)
   list.insert() - add element at specified index Python_distribution
   list.extend() - add a list to another list
 

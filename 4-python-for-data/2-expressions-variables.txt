@@ -1,0 +1,10 @@
+Expressions and Variables
+
+Expressions are instructions that you can do in Python, whereby values are used with operations to evaluate something down into a single value.
+
+12 + 15 is an expression, for example.
+
+We can assign expressions to a variable, and the variable will represent the result of that expression.
+
+x = 12/4
+x = 3

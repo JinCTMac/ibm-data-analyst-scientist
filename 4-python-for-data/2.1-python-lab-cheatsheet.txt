@@ -1,0 +1,10 @@
+Lab 1 Cheatsheet
+
+Executing code:
+  On Mac, execute using Control + Enter.
+
+Writing comments:
+  In Python, using # for commenting. Or just run Command + / to comment out highlighted code.
+
+Interpreted language:
+  Python is an interpreted language, or scripting language, and executes code line-by-line, so when it encounters an error, it will stop there and all lines of code past the line where the error occurred will not be executed, unless you tell it not to stop.

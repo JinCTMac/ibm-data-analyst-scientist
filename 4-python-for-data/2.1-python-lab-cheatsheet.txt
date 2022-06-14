@@ -2,9 +2,19 @@ Lab 1 Cheatsheet
 
 Executing code:
   On Mac, execute using Control + Enter.
+  print("hello world lmao")
 
 Writing comments:
   In Python, using # for commenting. Or just run Command + / to comment out highlighted code.
+  # this is a comment
 
 Interpreted language:
   Python is an interpreted language, or scripting language, and executes code line-by-line, so when it encounters an error, it will stop there and all lines of code past the line where the error occurred will not be executed, unless you tell it not to stop.
+  print("this will print")
+  print("this will fail because lack of second speech marks)
+  print("this will not print")
+
+Objects and types:
+  Python is an object oriented language, hence all types you work with in Python are objects of that type class. We can check the type of any variable or raw value using the type() method, which simply returns the type of that variable or value.
+
+  type(12.0) => will return float

@@ -12,6 +12,9 @@ We can slice a string using the variable the string is assigned to, and accessin
 name[0:4]
 name => will return "jesu"
 
+d = "ABCDEFG"
+d[0:3]
+
 We can use the len() method to obtain the length of the string.
 
 We can concatenate strings using +. This returns a new string that is the combination of both strings.

@@ -1,0 +1,12 @@
+Dictionaries
+
+Dictionaries are a collection without integer indexes. They have key-values pairs, where keys are unordered and reference the value. The keys are immutable, while the values are mutable.
+
+The key is used to look up the value associated with it, where we use [] notation to find the value:
+  dict["colour"] => will return "red"
+
+We can add new values to the dictionary using [] notation again, but assigning a value.
+  dict["car_make"] "Nissan"
+
+To delete a key-value pair from a dictionary, we can use the del method with the dict and key name.
+  del(dict["colour"])

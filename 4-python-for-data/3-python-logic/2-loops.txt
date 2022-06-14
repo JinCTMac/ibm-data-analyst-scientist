@@ -1,0 +1,28 @@
+Loops/Iteration
+
+range():
+  The range() function produces a list/array of numbers from the number range specified, from the starting value up to the ending value - 1.
+
+  range(10,15)
+  [10,11,12,13,14]
+
+For loops:
+  Loops perform a task again and again until the end conditions/break conditions are fulfilled.
+
+  for i in range(0,3):
+    print(i)
+  => will return 0, 1, 2
+
+Enumerate:
+  We can use the enumerate function to loop through a list or other enumerable object and also display other values i.e. their index.
+
+  for i, square, in enumerate(squares):
+    print(i, square)
+
+While loops:
+  While loops loop while a condition is true (or false).
+
+  i = 0
+  while squares[i] == "orange":
+    print(squares[i])
+    i += 1

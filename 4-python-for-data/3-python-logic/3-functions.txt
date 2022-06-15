@@ -44,6 +44,11 @@ Function definition:
     for i, name in list:
       print("Album", i, "Song", name)
 
+  # Print the list using for loop
+  def PrintList(the_list):
+      for element in the_list:
+          print(element)
+
 Built-in functions:
   Common built in functions include:
     len() - takes a sequence or collection like a list/array, dictionary, tuple, etc and returns the length, or number of items, in that sequence or collection

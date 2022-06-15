@@ -6,3 +6,12 @@ Function definition:
   def doubleFunc(param):
     # multiplies input parameter (int) by 2
     return param * 2
+
+  We usually write in comments a comment as documentation for what the function does.
+
+Built-in functions:
+  Common built in functions include:
+    len() - takes a sequence or collection like a list/array, dictionary, tuple, etc and returns the length, or number of items, in that sequence or collection
+    sum() - takes an iterable and returns the total of the value of the elements in the iterable, like a list
+    sorted() - the sorted function returns a NEW list or tuple, sorted from the original
+    sort() - similar to sorted(), but it modifies the input iterable instead, so the original list or tuple changes

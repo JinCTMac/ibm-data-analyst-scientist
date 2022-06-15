@@ -19,6 +19,10 @@ Function definition:
       print(a, "if you add one", b)
       return(b)
 
+  To read that documentation, we can use the help() method.
+
+  help(add) => will return the comments written in documentation
+
   If your function doesn't have a return statement, you can treat it as not returning anything at all, although Python in the background produces a None object.
 
   We can use the keyword pass in a function to ensure that a function always has a body, even if you don't want the function to do anything.

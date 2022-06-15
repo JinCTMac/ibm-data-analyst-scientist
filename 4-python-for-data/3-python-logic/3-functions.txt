@@ -1,0 +1,8 @@
+Functions
+
+Python has built in functions, but we can create our own as well. Functions are reusable blocks of code that take an input and produce an output.
+
+Function definition:
+  def doubleFunc(param):
+    # multiplies input parameter (int) by 2
+    return param * 2

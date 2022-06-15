@@ -23,7 +23,14 @@ Function definition:
 
   help(add) => will return the comments written in documentation
 
-  If your function doesn't have a return statement, you can treat it as not returning anything at all, although Python in the background produces a None object.
+  If your function doesn't have a return statement, you can treat it as not returning anything at all, although Python in the background produces a None object. This means the two functions below are the same.
+
+  def MJ():
+      print('Michael Jackson')
+
+  def MJ1():
+      print('Michael Jackson')
+      return(None)
 
   We can use the keyword pass in a function to ensure that a function always has a body, even if you don't want the function to do anything.
 

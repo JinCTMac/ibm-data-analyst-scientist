@@ -9,9 +9,26 @@ Function definition:
 
   We usually write in comments a comment as documentation for what the function does.
 
+  If your function doesn't have a return statement, you can treat it as not returning anything at all, although Python in the background produces a None object.
+
+  We can use the keyword pass in a function to ensure that a function always has a body, even if you don't want the function to do anything.
+
+  def ok():
+    pass
+  print("function does nothing")
+
+  We can use iteration in functions.
+
+  def printAlbums(list):
+    for i, name in list:
+      print("Album", i, "Song", name)
+
 Built-in functions:
   Common built in functions include:
     len() - takes a sequence or collection like a list/array, dictionary, tuple, etc and returns the length, or number of items, in that sequence or collection
     sum() - takes an iterable and returns the total of the value of the elements in the iterable, like a list
     sorted() - the sorted function returns a NEW list or tuple, sorted from the original
     sort() - similar to sorted(), but it modifies the input iterable instead, so the original list or tuple changes
+
+Scope:
+  Variables defined outside of a function are said to be in the global scope, and they can be accessed after they are defined. If they are within a function, they are called local variables, and only exist within the function call. We cannot access a local variable in the global scope.

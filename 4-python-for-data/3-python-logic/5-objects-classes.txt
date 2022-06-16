@@ -47,4 +47,4 @@ class Circle:
 
   We can add default values for the init method.
 
-  We can use the dir() method on an object to find out the list of data attributes.
+  We can use the dir() method on an object to find out the list of methods for that object/instance.

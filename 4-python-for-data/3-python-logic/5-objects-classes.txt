@@ -1,3 +1,50 @@
 Objects and Classes
 
-All of the main types in Python are object classes. Everything string variable is in fact an instance of type/class string.
+All of the main types in Python are object classes. Everything string variable is in fact an individual instance of type/class string. Same with strings, same with lists, etc.
+
+Methods:
+  Functions defined specifically for a certain class or type.
+
+  list.sort() is a list method for example.
+
+Creating classes in Python:
+  Every class has its own data attributes and methods.
+  For example, the class circle can have attributes radius and colour, where colour is used to distinguish between instances.
+
+  class Circle:
+
+  Every class has an initialisation function, like in Ruby where its def init(param1, param2), where the attributes of the class are defined. We set the values of the instances equal to the value of the parameters passed.
+
+  class Circle:
+    def __init__(self, radius, colour)
+      self.radius = radius;
+      self.colour = colour;
+
+  When we create an instance of a class, we use constructor syntax:
+
+  newCircle = Circle(2, "Red")
+
+  We can modify the values in an instance by calling the instance name, then using . notation and reassigning the value of that attribute.
+
+  newCircle.colour = "Blue"
+
+Methods:
+  Methods are functions that interact with to change or make use of the data attributes of a class or its instances.
+
+  There are two types:
+    Class methods - interact with the class itself
+    Instance methods - interact with the instances of a class
+
+class Circle:
+  def__init__(self, radius, colour):
+    self.radius = radius;
+    self.colour = colour
+
+  def add_to_radius(self, add):
+    self.radius = self.radius + add
+
+  We call this method via . notation, so newCircle.add_to_radius(5).
+
+  We can add default values for the init method.
+
+  We can use the dir() method on an object to find out the list of data attributes.

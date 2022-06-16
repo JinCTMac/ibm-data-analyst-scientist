@@ -1,0 +1,3 @@
+Objects and Classes
+
+All of the main types in Python are object classes. Everything string variable is in fact an instance of type/class string.

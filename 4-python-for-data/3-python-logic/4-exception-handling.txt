@@ -1,1 +1,18 @@
 Exception Handling
+
+Why do programs give error messages instead of following through?
+
+We can encase code in an exception handler to detect when errors occur.
+
+Try...except:
+  Will try to execute the code in the try block, but if it fails, it will go to exceptions and try to execute the code there.
+
+  Let's say we have a program that will try to read and write an input file.
+
+  try:
+    getfile = open("my_file", "r")
+    getfile.write("File for exception handling")
+  except IOError:
+    print("Unable to read or open the data in this file")
+
+  Using a try...except statement, the try statement will be executed first. If an input file is of the wrong format or cannot be read/written to for some reason, it will then execute the except statement or statements, until it finds a statement that can run and which will return an error message.

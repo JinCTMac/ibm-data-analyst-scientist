@@ -16,3 +16,5 @@ Try...except:
     print("Unable to read or open the data in this file")
 
   Using a try...except statement, the try statement will be executed first. If an input file is of the wrong format or cannot be read/written to for some reason, it will then execute the except statement or statements, until it finds a statement that can run and which will return an error message.
+
+  Sometimes, we will need to add multiple except statements to try and catch all the potential errors.

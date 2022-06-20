@@ -27,6 +27,7 @@ Close:
   These two lines below are just to confirm that the file has been closed, using the .closed method, and to check that you can still print the contents of the file.
 
   print(file_data.closed)
+  # Just returns Boolean value if file is closed or not
   print(file_data)
 
   The With keyword acts as a function that executes all of the code within the indented block. We can check if the file is closed outside of the block, but cannot read the file outside of the block. We can check the file content as above, however.

@@ -24,6 +24,8 @@ Close:
     file_data = file1.read()
     print(file_data)
 
+  These two lines below are just to confirm that the file has been closed, using the .closed method, and to check that you can still print the contents of the file.
+
   print(file_data.closed)
   print(file_data)
 

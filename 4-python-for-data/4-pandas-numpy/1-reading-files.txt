@@ -7,6 +7,10 @@ Open:
 
     file1 = open("/file_path_here", "r")
 
+    # Read the Example1.txt
+    example1 = "Example1.txt"
+    file1 = open(example1, "r")
+
   We can use the data attributes of the file to access its values. These attributes are based on the parameters we passed the open method.
 
     file1.name would return the file path, or file name that was passed in the parameter.

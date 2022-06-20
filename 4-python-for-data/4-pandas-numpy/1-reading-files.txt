@@ -1,1 +1,35 @@
 Reading Files with Open
+
+Open:
+  We can use the open method to open files, with two parameters:
+    1) The file path
+    2) The mode of execution, where r is read, w is write, and a is append
+
+    file1 = open("/file_path_here", "r")
+
+  We can use the data attributes of the file to access its values. These attributes are based on the parameters we passed the open method.
+
+    file1.name would return the file path, or file name that was passed in the parameter.
+
+    file1.mode would return the mode we specified, so either r, w or a.
+
+Close:
+  We can close the file using the .close() method, but this is tedious. So we can instead use the With keyword.
+
+  With open("file_path", "r") as file1:
+    file_data = file1.read()
+    print(file_data)
+
+  print(file_data.closed)
+  print(file_data)
+
+  The With keyword acts as a function that executes all of the code within the indented block. We can check if the file is closed outside of the block, but cannot read the file outside of the block. We can check the file content as above, however.
+
+Readlines:
+  We can print the output of reading a file, which will return the file content exactly as it would be as string. If we don't print and just return the raw string, it will be a single line with \n to denote new lines.
+
+  We can return the string values of a file as an array using .readlines(), where each element represents a line in the text file.
+
+  We can specify the number of characters we want to read from a string by putting a number as a parameter in the .readlines() method.
+
+  string1 = file1.readlines(4)

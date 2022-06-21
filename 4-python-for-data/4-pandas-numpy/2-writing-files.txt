@@ -1,0 +1,33 @@
+Writing Files with Open
+
+Write:
+  We can use the open() method again to write a new file, or overwrite an existing file.
+
+  We set the mode to "w", and the file name parameter to a new file path and file name.
+
+  file2 = open("new_file_path", "w")
+
+  To actually write a string to a file, we can use the .write() method, with the string we want to write to the file inside.
+
+  file2.write("This is line A \n")
+  file2.write("This is line B \n")
+
+Writing multiple lines:
+  We can use the with function to write to a file instead to save having to close. If we want to write multiple lines to a file, one way is to build an array with the strings we want to populate the file with.
+
+  Lines = ["string1", "string2"]
+
+  with open("file_path", "w") AS file1:
+    for line in Lines:
+      file1.write(line)
+
+Appending:
+  Using the append mode will just write to an existing file, adding new lines.
+
+Copying a file:
+  We can copy over a file's contents to another file using simple iteration logic.
+
+  with open("file_path", "r") as readfile:
+    with open("file_path", "w") as writefile:
+      for line in readfile:
+        writefile.write(line)

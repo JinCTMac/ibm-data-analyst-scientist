@@ -1,1 +1,12 @@
 Working with and saving data in Pandas
+
+We can work with and save the results of a dataframe analysis in other formats.
+
+Pandas methods:
+  df['col_name'].unique() = allows us to find the unique values within a certain column, similar to a SELECT DISTINCT in SQL.
+
+  df1.to_csv('csv_name.csv') = allows us to save a dataframe to a new csv file.
+
+Let's say we want to extract a new dataframe from an existing one, but the release date has to be on or after 1980. We can write this to a new dataframe like so, using the method for creating a new dataframe and checking against the conditions:
+
+  df1 = df[df['released'] >= 1980]

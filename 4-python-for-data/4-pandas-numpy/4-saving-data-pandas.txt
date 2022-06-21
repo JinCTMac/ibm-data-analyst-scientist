@@ -10,3 +10,15 @@ Pandas methods:
 Let's say we want to extract a new dataframe from an existing one, but the release date has to be on or after 1980. We can write this to a new dataframe like so, using the method for creating a new dataframe and checking against the conditions:
 
   df1 = df[df['released'] >= 1980]
+
+Creating a dataframe from a dictionary:
+   #write your code here
+
+  dict = {"Student": ["David", "Samuel", "Terry", "Evan"],
+        "Age": [27, 24, 22, 32],
+        "Country": ["UK", "Canada", "China", "Evan"],
+        "Course": ["Python", "Data Structures", "Machine Learning", "Web Development"],
+        "Marks": [85, 72, 89, 76]}
+
+  df2 = pd.DataFrame(dict)
+  df2

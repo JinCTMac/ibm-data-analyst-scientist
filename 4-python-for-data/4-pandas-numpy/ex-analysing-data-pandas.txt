@@ -12,3 +12,6 @@ df.head():
 
 Series:
   We can view a column as a series, or a 1-d dataframe. It will just print out all the values in a single column to look at.
+
+  x = df['Length']
+  x

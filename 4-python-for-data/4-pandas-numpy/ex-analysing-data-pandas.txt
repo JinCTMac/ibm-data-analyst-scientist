@@ -1,0 +1,6 @@
+Analysing Data in Pandas
+
+import pandas as pd
+
+path = "file_path"
+df = pd.read_csv(path)

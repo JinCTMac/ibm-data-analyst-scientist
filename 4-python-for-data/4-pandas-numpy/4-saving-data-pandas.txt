@@ -22,3 +22,45 @@ Creating a dataframe from a dictionary:
 
   df2 = pd.DataFrame(dict)
   df2
+
+loc[] and iloc[]:
+  loc[] is a row and column based label location method, where we pass the name of the row and column we want to select.
+
+    loc[row_name, col_name]
+
+  iloc() is an index-based location method, where we pass the index of the row and column to get an exact value.
+
+    iloc[row_index, col_index]
+
+    # Access the value on the first row and the first column
+    df.iloc[0, 0]
+
+    # Access the value on the first row and the third column
+    df.iloc[0,2]
+
+    # Access the column using the name, so we need to use loc instead
+    df.loc[0, 'Salary']
+
+Setting index column:
+  We can make a column an index column by using the .set_index() method.
+
+  df1=df
+  df1=df1.set_index("Name")
+
+  The main purpose for this is that we can now access using the loc() method without specifying a row index.
+
+  df1.loc['Jane', 'Salary']
+
+Slicing:
+  We can use slicing to select a set of rows/columns from a dataframe.
+
+  So if you want to select rows 0, 1, and 2 your code would look like this: df.iloc[0:3]. It means you are telling Python to start at index 0 and select rows 0, 1, 2 up to but not including 3. Then we need to do the same for the columns, so with iloc, we set a range to tell the number of columns we want to select.
+
+  # let us do the slicing using old dataframe df
+  df.iloc[0:2, 0:3] # Selects rows 0 and 1, and then columns 0, 1 and 2.
+
+  #let us do the slicing using loc() function on old dataframe df where index column is having labels as 0,1,2
+  df.loc[0:2,'ID':'Department']
+
+  #let us do the slicing using loc() function on new dataframe df1 where index column is Name having labels: Rose, John and Jane
+  df1.loc['Rose':'Jane', 'ID':'Department']

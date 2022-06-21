@@ -1,1 +1,34 @@
 Loading Data with Pandas
+
+Libraries/packages are collections of code and methods that make it easier to solve certain problems. Pandas is a common library for data analysis.
+
+Importing:
+  We just use the import keyword and the name of the library to import an installed library.
+
+  import pandas
+
+  We can give them aliases as well.
+
+  import pandas as pd
+
+  To load a CSV file, we can use the built-in methods that pandas has, like pandas.read_csv().
+
+  csv_file = 'file1.csv'
+  df = pd.read_csv(csv_file)
+
+Dataframes:
+  Dataframes are a format within Python and R that enable much easier data access.
+
+  Dataframes have their own methods that enable simple and quick data analysis. df.head() for example returns the top 5 rows within the dataframe.
+
+  df.head()
+
+  We can also turn files other than CSVs, such as Excel files.
+
+  pd.read_excel()
+
+  Dataframes have rows and columns, and we can create a dataframe from a dictionary, where the keys are the column names, and the values are found in the rows.
+
+  To extract a new dataframe from an existing dataframe, we assign a variable and enclose the columns we want to extract from the existing dataframe in [] brackets.
+
+  x = df[['length', 'height']]

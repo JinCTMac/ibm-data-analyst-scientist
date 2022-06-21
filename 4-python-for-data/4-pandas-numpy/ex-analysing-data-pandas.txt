@@ -4,3 +4,11 @@ import pandas as pd
 
 path = "file_path"
 df = pd.read_csv(path)
+
+After we import pandas and read a csv, we can start to do some prelimary analysis.
+
+df.head():
+  We can use the .head() method to print the first 5 rows of a df to look at.
+
+Series:
+  We can view a column as a series, or a 1-d dataframe. It will just print out all the values in a single column to look at.

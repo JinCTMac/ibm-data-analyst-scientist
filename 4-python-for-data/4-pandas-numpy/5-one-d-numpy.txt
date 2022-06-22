@@ -1,1 +1,90 @@
 One Dimensional Numpy
+
+Numpy is a library for scientific computing, and pandas is based off Numpy.
+
+Basics:
+  Arrays in numpy are based off lists/arrays. Numpy arrays are fixed in size (usually), and elements are of the same time. We can cast a list to a numpy array.
+
+  import numpy as np
+  a = np.array([0,1,2,3,4,5])
+
+  The attribute size is the number of elements in the array. We can find this out using a.size. a.ndim tells us the number of array dimensions, which will be 1 in this instance. a.shape returns a tuple telling us the size of the array in each dimension.
+
+  We can also create a numpy array with floats.
+
+Indexing and slicing:
+  We can change the first element of the array just like how you would in a normal list.
+
+  a[0] = 100 # changes first element to 100
+
+  We can slice just like in regular lists.
+
+  c = a[1:4] # takes 2nd, 3rd and 4th index elements
+
+Basic operations:
+  Vector addition and subtraction:
+    Vector addition and subtraction is common in data science, and we can easily do it in numpy.
+
+    Imagine vector u with values [1,0] and vector v with values [0,1]. We can create a new vector z by adding the values of both u and v, resulting in vector z as [1,1].
+
+    To do this addition, we can write the following:
+
+    u = [1,0]
+    v = [0,1]
+
+    z = []
+
+    for n, m in zip(u,v):
+      z.append(n+m)
+
+    Where the additions are appended to empty array z.
+
+    But with numpy we can also do this in one line. Numpy also runs much faster due to code optimisation.
+
+    u = np.array([1,0])
+    v = np.array([0,1])
+    z = u + v
+    z:array([1,1])
+
+  Vector multiplication via scalar:
+    We can multiply a vector [1,2] by a scalar value, like 2, hence becoming [2,4].
+
+    In numpy, this is as easy as:
+
+    y = np.array([1,2])
+    z = y*2
+    z:array([2,4])
+
+    Otherwise, in normal python it would look like this:
+
+    y = [1,2]
+    z = []
+
+    for i in y:
+      z.append(2*i)
+
+  Product of two arrays:
+    The Hadamard product is a value formed by multplying the elements in two vectors with each other (also see https://medium.com/linear-algebra/part-14-dot-and-hadamard-product-b7e0723b9133).
+
+    If we have two vectors, u and v, the hadamard product z is the result of their multiplication.
+
+    u = [1,2]
+    v = [2,3]
+
+    z = [2,6]
+
+    In numpy, this is as easy as:
+
+    u = np.array([1,2])
+    v = np.array([2,3])
+    z = u*v
+
+    The dot product is the result of adding the values of multiplication of all the elements in the two vectors.
+
+    In numpy, we can use the function np.dot() to do this.
+
+    u = np.array([1,2])
+    v = np.array([2,3])
+    result = np.dot(u,v)
+
+  Adding a constant to a numpy array:

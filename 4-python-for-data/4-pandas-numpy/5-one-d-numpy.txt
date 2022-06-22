@@ -88,3 +88,14 @@ Basic operations:
     result = np.dot(u,v)
 
   Adding a constant to a numpy array:
+    u = np.array([1,2,3,-1])
+    z = u+1 # returns an array with 1 added to each element
+
+  Universal functions:
+    .mean() - finds the mean value of the array
+    a = [1,2,3,4,5,6,7]
+    mean_a = a.mean()
+
+    .max() - finds the max value of the array
+    a = [1,2,3,4,5,62,8,9]
+    max_a = a.max()

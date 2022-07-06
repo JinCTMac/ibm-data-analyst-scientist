@@ -79,7 +79,7 @@ Basic operations:
     v = np.array([2,3])
     z = u*v
 
-    The dot product is the result of adding the values of multiplication of all the elements in the two vectors.
+    The dot product is the result of adding the values of multiplication of all the corresponding elements in two or more arrays, which for 1d arrays returns a single value representing the combined value of those multiplications.
 
     In numpy, we can use the function np.dot() to do this.
 

@@ -1,6 +1,6 @@
 One Dimensional Numpy
 
-Numpy is a library for scientific computing, and pandas is based off Numpy.
+Numpy is a library for scientific computing, and pandas is based off Numpy. Numpy is primarily used for working with arrays, linear algebra, fourier transformations and matrices. The array in numpy is called ndarray, and incorporates many functions that make working with the abode data structures and techniques easier.
 
 Basics:
   Arrays in numpy are based off lists/arrays. Numpy arrays are fixed in size (usually), and elements are of the same time. We can cast a list to a numpy array.

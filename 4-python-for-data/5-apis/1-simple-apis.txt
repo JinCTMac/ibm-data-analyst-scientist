@@ -1,1 +1,6 @@
 Simple APIs (Part 1)
+
+What is an API?
+  An API (Application Programming Interface) lets two pieces of software talk to one another. A piece of software makes use of an API to connect with the other piece of software via inputs and outputs.
+
+  Pandas is an API that communicates with the other software components it draws from and Python - when you call a pandas function, it communicates with the pandas API using the dataframe you've given as an input, and the API takes that DF and returns the results of the function you've input.

@@ -4,3 +4,22 @@ What is an API?
   An API (Application Programming Interface) lets two pieces of software talk to one another. A piece of software makes use of an API to connect with the other piece of software via inputs and outputs.
 
   Pandas is an API that communicates with the other software components it draws from and Python - when you call a pandas function, it communicates with the pandas API using the dataframe you've given as an input, and the API takes that DF and returns the results of the function you've input.
+
+REST APIs:
+  REST APIs, or representational state transfer APIs, are APIs that conform to REST architectural principles and are primarily used for API interaction with websites and web services. Rather than two software communicating, REST APIs involve communication between a client and a web server/service. Your website or code interacts with the web service, or resource, and sends a request to the resource, then receives back a response from the service. The request is usually provided via an HTTP request, usually with a JSON file indicating what we want from the web service/resource. The response is also sent back via HTTPS as a JSON.
+
+API examples:
+  Crypto is an excellent example of an industry where APIs are essential to the functioning of the industry. PyCoinGecko is a client that can be used for the CoinGecko API service.
+
+  To use PyCoinGecko is simple, we just need to install and then import the library.
+
+  !pip install pycoingecko
+  from pycoingecko import CoinGeckoAPI
+  # create a client object cg
+  cg = CoinGeckoAPI()
+
+  bitcoin_data = cg.get_coin_market_chart_by_id(id='bitcoin', vs_currency='usd', days=30)
+
+  The above returns a dictionary of nested lists containing price, market cap, timestamp, etc - we just want the timestamp and price, so we can extract it as a dataframe. We can make the timestamp more readable using to_datetime function.
+
+  data['Date'] = pd.to_datetime(data['Timestamp'], units='ms')

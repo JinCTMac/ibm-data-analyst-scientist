@@ -1,1 +1,12 @@
 Working with different file formats (CSV, XML, XLSX, etc)
+
+Different file formats:
+  When collecting data, there are many different file formats that need to be read in different ways.
+
+  What file formats are common?
+    - CSV
+    - JSON
+    - XLSX
+    - XML
+
+  We need to utilise Python libraries to read and then analyse the data in these different file formats. Pandas is probably the most important library that lets us do this, and transform that data into a dataframe which we can then manipulate to change the headers, change the index column, etc.

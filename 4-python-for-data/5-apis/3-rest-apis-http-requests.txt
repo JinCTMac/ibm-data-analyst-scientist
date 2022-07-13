@@ -1,1 +1,20 @@
 REST APIs and HTTP Requests Part 1
+
+HTTP:
+  HTTP stands for HyperTextTransferProtocol, and is the base protocol of the web. It is a protocol to transfer resources, resources being the files that make up websites, etc and which is modelled on a client-server interaction, with the client making a request and receiving a response from the server.
+
+  HTTP is made up of three components:
+  - The protocol, or scheme, which in most cases will be http:// or https://
+  - The base URL, or web address, which is the www.google.com, etc
+  - The route, which will be a file path towards the files that you want to access on said website, which may be web pages, or actual files which will be downloaded
+
+Request and response:
+  - The most common request will be a GET method, which is a HTTP request method that has a header and is usually used to request a webpage or a file
+  - Some requests may have a body, which is usually for a POST request and contains what we are sending over to the server within the request
+  - The response contains a header and a body, usually an index.html alongside CSS and JS
+
+  HTTP methods:
+    - GET: receives data from a server
+    - POST: submits data to a server
+    - PATCH/PUT: updates data on a server
+    - DELETE: removes data from a server

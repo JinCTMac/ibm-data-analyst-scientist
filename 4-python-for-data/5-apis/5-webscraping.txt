@@ -1,1 +1,12 @@
 HTML for Webscraping
+
+What is webscraping?
+  Lots of useful information is available on websites, such as real estate prices, review scores, etc.
+
+  If you understand HTML, you can use Python to scrape that information from that website.
+
+Let's say you want to extract names and salaries from a website. HTML is comprised of elements, such as <body></body>, <div></div>, <p></p>, <a></a>, etc.
+
+The data we want of the element is enclosed within the tags of an element. Some tags like <a></a> have attributes like href, class, id, etc which can be used for further identification of an element using getElementById and other DOM methods.
+
+Tables in HTML are created using the <table></table>, alongside <tr></tr> or table rows, and <td></td> or table data. Each <tr></tr> element represents a row within a table, and within each row we define <td></td> to represent the table columns and values.

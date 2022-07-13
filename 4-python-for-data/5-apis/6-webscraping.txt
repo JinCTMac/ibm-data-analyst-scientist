@@ -1,1 +1,40 @@
 Webscraping
+
+What is webscraping?
+  - As in previous section, if we want to gather information we can use webscraping to automatically gather information from a website.
+
+Getting started with webscraping:
+  To get started, we just need two libraries: requests and beautiful-soup.
+
+  from bs4 import BeautifulSoup
+  html = "<your_html></your_html>
+
+  We parase this bit of HTML using the BeautifulSoup() method, providing it the html file and the version of html we are parsing. This returns a nested data structure.
+
+  soup = BeautifulSoup(html, 'html5lib')
+
+BeautifulSoup objects:
+  BeautifulSoup objects let us access the contents of HTML elements that we specify.
+
+  tag_object = soup.title
+  soup.title => <title>Page Title</title>
+
+  We need to consider the DOM when accessing elements in this way.
+
+  We can find parent elements to an element using the soup.parent method.
+
+  We can find child elements using the name of the element soup.b for example.
+
+  We can find the sibling of an element (or the element directly underneath in the HTML itself) using soup.next_sibling.
+
+  We can find the attributes of an element using soup.attrs.
+
+  We can find the contents of an element using soup.string.
+
+Tables:
+  We can specifically identify HTML tables and turn them into BeautifulSoup objects. These objects are iterables similar to a list, and thus we can iterate through them row-by-row.
+
+Scraping a webpage.
+  For scraping a webpage, we also need the requests library.
+
+  We use the get method to get the website, and then we can parse that webpage's HTML using BeautifulSoup.

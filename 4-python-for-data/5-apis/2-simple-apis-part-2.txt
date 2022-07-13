@@ -1,1 +1,11 @@
 Simple APIs Part 2
+
+APIs that use AI/ML:
+  Some APIs make use of ML/AI models. Imagine you have a sound/audio file in another language that you want to have analysed and translated. You first send the file to the API in a HTTP request, more specifically a HTTP POST request, which contains the file. The API will then send back a text transcription of the audio file. We then send the text to a translation API, and then send it back to you.
+
+API Keys and Endpoints:
+  What are API keys?
+    An API key is a way to access the API, a unique set of characters that authorises your account that you are accessing the API with. Sometimes, you will be charged depending on your API usage, or the number of API calls you make or traffic, so you should keep your API key a secret.
+
+  What are API endpoints?
+    An API endpoint is essentially the location of where the API is on the internet, similar to a URL or web address for a website.

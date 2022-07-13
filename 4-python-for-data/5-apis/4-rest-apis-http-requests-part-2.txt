@@ -1,1 +1,24 @@
 REST APIs and HTTP Requests Part 2
+
+Requests library:
+  The request library is a useful library for understanding and performing HTTP requests in Python.
+
+  import requests
+  url = 'www.your_url.com"
+  r = requests.get(url)
+
+  You can view attributes such as the request header, the request body, etc. We can also look at the date of when the request was sent, the type of data that was sent, the HTML in the body of the response, etc.
+
+  We can make these requests to APIs as well, in which case the GET request will contain the base URL alongside a query string, which contains the parameters and values we are looking for in the data we are getting via the API. Each parameter and value is separated by &.
+
+  We can do this easily in the requests library by assigning variables for the base url, the parameters as a dictionary, and then using the requests.get method with the base url and the parameter-value pairs as a second paramter within the method.
+
+  url = 'www.your_url.com'
+  param_values = {"name":"john", "age":"23"}
+  r = requests.get(url, params=param_values)
+
+  Responses from an API are mostly in the JSON format, and we can convert them into Python dicts using the .json() method.
+
+  POST requests are different in that we don't send information within the URL, but within the request body instead. The route for this will be /post instead of /get.
+
+  We can create a dictionary object and provide it as params again, but we will see that the POST request has no params/values in its URL as the information is instead stored within the body.

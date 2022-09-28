@@ -1,6 +1,6 @@
 Conditions and Branching
 (https://www.w3schools.com/python/python_conditions.asp)
-
+///
 We can use logical operators to compare two values and return a boolean telling us if the value is true or false.
 
 Logical operators include:
